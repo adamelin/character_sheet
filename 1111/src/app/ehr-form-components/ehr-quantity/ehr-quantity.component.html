@@ -1,0 +1,34 @@
+<div class="form-group ehr-text ehr-line col-sm-12"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.data-ehr-name]="model.getName()"
+     *ngIf="!(isHiddenValue)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)"
+     [ngClass]="EhrLayoutHelper.computeEhrLineClass(model)"
+>
+   <mrd-labeled-input [labelClasses]="labelClasses" [inputClasses]="inputWrapClasses" [tooltipValue]="tooltipValue">
+    <mrd-field-label *ngIf="!isLabelHidden">{{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}</mrd-field-label>
+    <mrd-field-content>
+      <div class="row" [ngClass]="inputHorizontalLayoutClass">
+        <div [ngClass]="inputClasses">
+          <mrd-quantity-input
+            *ngFor="let modelValue of (modelValues$ | async); let i=index; trackBy:trackByIndex" [multiIndex]="i"
+            [modelValue]="getPropValue(modelValue,'|magnitude')" (onModelValue)="updateModel($event, i)"
+            [unitValue]="getPropValue(modelValue,'|unit')" (onUnitValue)="updateUnit($event, i)" [unitList]="unitListTranslated|async" [hideUnit]="hideUnit"
+            [decimalPrecisionDisplayRoundZeros]="decimalPrecisionDisplayRoundZeros"
+            (addMultiInput)="onAddMultiInput()" (removeMultiInput)="onRemoveMultiInput(i)"
+            [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId(i)"
+            [isReadOnly]="isReadOnlyValue" [isHidden]="isHiddenValue"
+            class="multi-input-item" [ehrFormArray]="ehrFormArray"
+            [validateFormEvent]="validateFormEvent" [valueValidationFunctions]="valueValidationFunctions" [validationResolver]="validationResolver"
+            (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+            [removeMultiDisabled]="removeDisabledIndexes[i]" [addMultiDisabled]="addDisabledIndexes[i]"
+            [multiControlsHidden]="multiControlsHidden" [isCommaSeparator]="isCommaSeparator"
+            (onEditStart)="onEditStart.emit({value:{magnitude:getPropValue(modelValue,'|magnitude'), unit:getPropValue(modelValue,'|unit')}, multiIndex:i})" (onEditEnd)="onEditEnd.emit({value:{magnitude:getPropValue(modelValue,'|magnitude'), unit:getPropValue(modelValue,'|unit')}, multiIndex:i})"
+            [inputPlaceholder]="ehrInputPlaceholder" [hideUnit]="hideUnit"
+            [displayTooltipValidation]="tooltipValidation" [hideLongValueTooltips]="hideLongValueTooltips"
+          >
+          </mrd-quantity-input>
+        </div>
+        </div>
+    </mrd-field-content>
+  </mrd-labeled-input>
+</div>

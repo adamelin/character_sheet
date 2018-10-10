@@ -1,0 +1,165 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "inherit",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "label": {
+        "valign": "inherit",
+        "align": "inherit"
+      },
+      "field": {
+        "valign": "inherit",
+        "align": "inherit"
+      }
+    },
+    "tags": [
+      "noUpload"
+    ]
+  },
+  "language": "",
+  "templateLanguages": [
+    "en",
+    "pt-br"
+  ],
+  "children": [
+    {
+      "name": "Global assessment!",
+      "localizedName": "Global assessment!",
+      "rmType": "OBSERVATION",
+      "nodeId": "openEHR-EHR-OBSERVATION.global-hsl.v1",
+      "min": 0,
+      "max": -1,
+      "localizedNames": {
+        "pt-br": "",
+        "en": "Global assessment!"
+      },
+      "localizedDescriptions": {
+        "en": "General assessment of the whole patient by the clinician.!"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.global-hsl.v1]",
+      "formId": "encounter/global_assessment",
+      "children": [
+        {
+          "name": "Vaccination",
+          "localizedName": "Vaccination",
+          "rmType": "CLUSTER",
+          "nodeId": "at0.177",
+          "min": 0,
+          "max": 1,
+          "localizedNames": {
+            "pt-br": "",
+            "en": "*New cluster(en)"
+          },
+          "localizedDescriptions": {
+            "en": "**(en)"
+          },
+          "aqlPath": "/content[openEHR-EHR-OBSERVATION.global-hsl.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0.177]",
+          "formId": "encounter/global_assessment/new_cluster_en",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "label": {
+              "custom": true
+            }
+          },
+          "children": [
+            {
+              "name": "Image of card",
+              "localizedName": "Image of card",
+              "rmType": "DV_MULTIMEDIA",
+              "nodeId": "at0.210",
+              "min": 0,
+              "max": 10,
+              "localizedNames": {
+                "pt-br": "",
+                "en": "*New element(en)"
+              },
+              "localizedDescriptions": {
+                "en": "**(en)"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.global-hsl.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0.177]/items[at0.210]/value",
+              "inputs": [
+                {
+                  "type": "TEXT"
+                }
+              ],
+              "formId": "encounter/global_assessment/new_cluster_en/new_element_en2",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "label": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  },
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "label": {
+                  "custom": true
+                },
+                "annotations": {
+                  "uploadUrl": "https://rest.ehrscape.com/store/rest"
+                },
+                "advanced": {
+                  "hidden": false,
+                  "readonly": false
+                },
+                "tags": [],
+                "datasource": {
+                  "loadRemote": false,
+                  "loadRemoteUrl": "",
+                  "terminology": ""
+                },
+                "field": {
+                  "input": {
+                    "uri": ""
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        }
+      }
+    }
+  ]
+}

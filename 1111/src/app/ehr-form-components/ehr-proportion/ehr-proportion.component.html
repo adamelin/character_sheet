@@ -1,0 +1,38 @@
+<div class="form-group ehr-text ehr-line col-sm-12"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.data-ehr-name]="model.getName()"
+     *ngIf="!(isHiddenValue)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)"
+     [ngClass]="EhrLayoutHelper.computeEhrLineClass(model)"
+>
+   <mrd-labeled-input [labelClasses]="labelClasses" [inputClasses]="inputWrapClasses" [tooltipValue]="tooltipValue">
+    <mrd-field-label *ngIf="!isLabelHidden">{{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}</mrd-field-label>
+    <mrd-field-content>
+      <div class="row" [ngClass]="inputHorizontalLayoutClass">
+        <div [ngClass]="inputClasses">
+      <!--p={{model.getPath()}} unq={{this.model.getSanitizedUniqueId()}}-->
+      <mrd-proportion-input
+        *ngFor="let modelValue of (modelValues$ | async); let i=index; trackBy:trackByIndex" [multiIndex]="i"
+        [numeratorValue]="modelValue['|numerator']" [denominatorValue]="modelValue['|denominator']"
+        (onNumeratorValue)="onNumeratorValue($event, i)" (onDenominatorValue)="onDenominatorValue($event,i)"
+        (addMultiInput)="onAddMultiInput()" (removeMultiInput)="onRemoveMultiInput(i)"
+        [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId(i)" [isReadOnly]="isReadOnlyValue"
+        [isHidden]="isHiddenValue"
+        class="multi-input-item" [ehrFormArray]="ehrFormArray"
+        [validateFormEvent]="validateFormEvent" [validationResolver]="validationResolver"
+        [numeratorValidationFunctions]="numeratorValidationFunctions" [denominatorValidationFunctions]="denominatorValidationFunctions"
+        (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+        [numeratorMinValue]="numeratorMinValue" [numeratorMaxValue]="numeratorMaxValue" [numeratorMinValueOp]="numeratorMinValueOp" [numeratorMaxValueOp]="numeratorMaxValueOp"
+        [numeratorDecimalPrecision]="numeratorPrecision" [numeratorStep]="numeratorStep"
+        [denominatorMinValue]="denominatorMinValue" [denominatorMaxValue]="denominatorMaxValue"  [denominatorMinValueOp]="denominatorMinValueOp" [denominatorMaxValueOp]="denominatorMaxValueOp"
+        [denominatorDecimalPrecision]="denominatorPrecision" [denominatorStep]="denominatorStep"
+        [removeMultiDisabled]="removeDisabledIndexes[i]" [addMultiDisabled]="addDisabledIndexes[i]"
+        [multiControlsHidden]="multiControlsHidden" [isCommaSeparator]="isCommaSeparator"
+        [isFixedDenominator]="isFixedDenominator" [isPercentage]="isPercentage"
+        (onEditStart)="onEditStart.emit({value:{numerator:modelValue['|numerator'], denominator:modelValue['|denominator']}, multiIndex:i})" (onEditEnd)="onEditEnd.emit({value:{numerator:modelValue['|numerator'], denominator:modelValue['|denominator']}, multiIndex:i})"
+        [displayTooltipValidation]="tooltipValidation">
+      </mrd-proportion-input>
+        </div>
+        </div>
+    </mrd-field-content>
+  </mrd-labeled-input>
+</div>

@@ -1,0 +1,167 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "inherit",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "valign": "inherit",
+      "align": "inherit"
+    },
+    "tags": []
+  },
+  "templateLanguages": [
+    "en",
+    "sl"
+  ],
+  "children": [
+    {
+      "localizedName": "Fieldset",
+      "localizedNames": {
+        "en": "Fieldset",
+        "sl": "Fieldset"
+      },
+      "min": 0,
+      "max": -1,
+      "name": "Fieldset",
+      "rmType": "GENERIC_FIELDSET",
+      "formId": "generic-field-99758",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "localizedName": "Composite field",
+      "localizedNames": {
+        "en": "Composite field",
+        "sl": "Composite field"
+      },
+      "min": 0,
+      "max": -1,
+      "name": "Composite field",
+      "rmType": "GENERIC_COMPOSITE_FIELD",
+      "formId": "generic-field-4277",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "name": "Requestor order identifier",
+      "localizedName": "Requestor order identifier",
+      "rmType": "ELEMENT",
+      "nodeId": "at0054",
+      "min": 0,
+      "max": 1,
+      "localizedNames": {
+        "en": "Requestor order identifier",
+        "sl": "*Requestor order identifier(en)"
+      },
+      "localizedDescriptions": {
+        "en": "The local ID assigned to the order by the healthcare provider or organisation requesting the service.",
+        "sl": "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)"
+      },
+      "annotations": {
+        "comment": "This is equivalent to Placer Order Number in HL7 v2 specifications."
+      },
+      "aqlPath": "/content[openEHR-EHR-ACTION.procedure.v1]/protocol[at0053]/items[at0054]",
+      "children": [
+        {
+          "localizedName": "Requestor order identifier",
+          "rmType": "DV_IDENTIFIER",
+          "min": 2,
+          "max": 12,
+          "localizedNames": {
+            "en": "Requestor order identifier",
+            "sl": "*Requestor order identifier(en)"
+          },
+          "localizedDescriptions": {
+            "en": "The local ID assigned to the order by the healthcare provider or organisation requesting the service.",
+            "sl": "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)"
+          },
+          "aqlPath": "/content[openEHR-EHR-ACTION.procedure.v1]/protocol[at0053]/items[at0054]/value",
+          "inputs": [
+            {
+              "suffix": "id",
+              "type": "TEXT"
+            },
+            {
+              "suffix": "type",
+              "type": "TEXT",
+              "defaultValue": "asda"
+            },
+            {
+              "suffix": "issuer",
+              "type": "TEXT",
+              "defaultValue": "asdasd"
+            },
+            {
+              "suffix": "assigner",
+              "type": "TEXT",
+              "defaultValue": "asdas"
+            }
+          ],
+          "formId": "melanoma_surgery_pathology/procedure/requestor_order_identifier/value2",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            }
+          }
+        }
+      ],
+      "formId": "melanoma_surgery_pathology/procedure/requestor_order_identifier",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<ul class="nav nav-pills">
+  <li class="nav-item" *ngFor="let tab of (tabService.getTabGroupForModel$(model) |async)?.tabs; trackBy:EhrLayoutHelper.trackByIndex" [class.tab-nav-invalid]="showValidationMarks && !tab.isValid || (!tab.isValid && tab.isInvalidDirty)">
+    <a href="#" class="nav-link tab-nav-item" [class.active]="tab.model===model" data-target="home" data-toggle="tab" (click)="tabService.selectTab(tab.model, true);$event.preventDefault();">{{tab.model.labelFor(language)}}</a>
+  </li>
+</ul>

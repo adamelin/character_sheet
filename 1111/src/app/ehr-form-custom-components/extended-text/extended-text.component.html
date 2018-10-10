@@ -1,0 +1,112 @@
+
+<ehr-text ></ehr-text>
+<div class="form-group ehr-text ehr-line col-sm-12"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.data-ehr-name]="model.getName()"
+     *ngIf="!(isHiddenValue)"
+     [ngClass]="EhrLayoutHelper.computeEhrLineClass(model)"
+>
+
+  <mrd-labeled-input [labelClasses]="labelClasses" [inputClasses]="inputWrapClasses" [tooltipValue]="tooltipValue">
+    <mrd-field-label *ngIf="!model.getViewConfig().isLabelHidden()">
+      <h5><span *ngIf="!!customModel" style="color: black">ANNOTATION </span>EXTENDED COMP.</h5> {{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}
+    </mrd-field-label>
+    <mrd-field-content>
+      <div [ngSwitch]="fieldType" class="row" [ngClass]="inputHorizontalLayoutClass">
+        <div [ngClass]="inputClasses">
+          <ng-template [ngSwitchCase]="TEXTAREA_FIELD_TYPE">
+            <mrd-text-input
+              *ngFor="let modelValue of (modelValues$ | async); let i=index; trackBy:trackByIndex;" [multiIndex]="i"
+              [modelValue]="modelValue" (onModelValue)="updateModel($event, i)"
+              (addMultiInput)="onAddMultiInput()" (removeMultiInput)="onRemoveMultiInput(i)"
+              [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId(i)" [isReadOnly]="isReadOnlyValue"
+              [isHidden]="isHiddenValue" [textareaRowsNr]="textValuesField(model).lines"
+              class="multi-input-item" [ehrFormArray]="ehrFormArray"
+              [validateFormEvent]="validateFormEvent" [valueValidationFunctions]="valueValidationFunctions"
+              [validationResolver]="validationResolver"
+              [removeMultiDisabled]="removeDisabledIndexes[i]" [addMultiDisabled]="addDisabledIndexes[i]"
+              [multiControlsHidden]="multiControlsHidden"
+              (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+              [inputPlaceholder]="ehrInputPlaceholder"
+              [displayTooltipValidation]="tooltipValidation"
+            >
+            </mrd-text-input>
+          </ng-template>
+          <ng-template [ngSwitchCase]="COMBOBOX_FIELD_TYPE">
+            <mrd-codedtext-input #mrdCodedTextInput
+                                 [modelValue]="inListValues$|async"
+                                 (onModelValue)="onComboValueSelected($event.value)"
+                                 (removeMultiInput)="onRemoveMultiInput($event)"
+                                 [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId()"
+                                 [isReadOnly]="isReadOnlyValue"
+                                 [isHidden]="isHiddenValue"
+                                 [radioCheckboxColumns]="radioCheckboxColumns"
+                                 class="multi-input-item" [ehrFormArray]="ehrFormArray"
+                                 [validateFormEvent]="validateFormEvent"
+                                 [valueValidationFunctions]="valueValidationFunctions"
+                                 [validationResolver]="validationResolver"
+                                 [minItems]="minItems" [maxItems]="maxItems"
+                                 [displayOpenButton]="true"
+                                 [displayClearButton]="(displayRadioClearButton && radioCheckboxColumns>0) || displayClearButton"
+                                 [inputFocusDisabled]="!getTerminology(model) && (codedTxtInputResultObsOrArrValue?.length && codedTxtInputResultObsOrArrValue?.length<8)"
+                                 [searchAtCharMinLen]="0" [showAllOnFocus]="true"
+                                 (onSearch)="onSearch($event)"
+                                 [searchResultItemsList]="codedTxtInputResultObsOrArrValue"
+                                 [searchResultItemsListArrayFilterFn]="null"
+                                 (onEditStart)="onEditStart.emit({value:model.textValue(undefined, undefined), multiIndex:null})"
+                                 (onEditEnd)="onEditEnd.emit({value:model.textValue(undefined, undefined), multiIndex:null})"
+                                 [inputPlaceholder]="ehrInputPlaceholder"
+                                 [selectInputLabelOnTop]="selectInputLabelOnTop"
+                                 [selectInputLabelHide]="selectInputLabelHide"
+                                 [comboActions]="comboActions"
+                                 [displayTooltipValidation]="tooltipValidation" [hideLongValueTooltips]="hideLongValueTooltips"
+            >
+              <ng-template #labelValueRes let-r="result" let-t="term">
+                {{r.label}}
+              </ng-template>
+            </mrd-codedtext-input>
+          </ng-template>
+          <ng-template ngSwitchDefault>
+            <mrd-text-input
+              *ngFor="let modelValue of (modelValues$ | async); let i=index; trackBy:trackByIndex;" [multiIndex]="i"
+              [modelValue]="modelValue" (onModelValue)="updateModel($event, i)"
+              (addMultiInput)="onAddMultiInput()" (removeMultiInput)="onRemoveMultiInput(i)"
+              [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId(i)" [isReadOnly]="isReadOnlyValue"
+              [isHidden]="isHiddenValue" (onEditStart)="onEditStart.emit({value:modelValue, multiIndex:i})"
+              (onEditEnd)="onEditEnd.emit({value:modelValue, multiIndex:i})"
+              class="multi-input-item" [ehrFormArray]="ehrFormArray"
+              [validateFormEvent]="validateFormEvent" [valueValidationFunctions]="valueValidationFunctions"
+              [validationResolver]="validationResolver"
+              [removeMultiDisabled]="removeDisabledIndexes[i]" [addMultiDisabled]="addDisabledIndexes[i]"
+              [multiControlsHidden]="multiControlsHidden"
+              (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+              [inputPlaceholder]="ehrInputPlaceholder"
+              [displayTooltipValidation]="tooltipValidation" [hideLongValueTooltips]="hideLongValueTooltips">
+            </mrd-text-input>
+            <div>
+              <!--<a (click)="setAsNotApplicable()">not applicable</a> || <a (click)="removeNotApplicable()">remove NA</a>-->
+            </div>
+          </ng-template>
+
+          <mrd-labeled-input *ngIf="model.isListOpen && model.isListOpen()"
+                             [class.has-danger]="translatedValidationErrors?.length">
+            <mrd-field-label class="list-open-other-input-label">{{'other.inputLabel'|translate}}</mrd-field-label>
+            <mrd-field-content>
+              <input
+                type="text"
+                [formControl]="otherValueControl"
+                class="ehr-text-input field k-textbox hide-in-ehr-view-mode form-control "
+                (focus)="onEditStart.emit({value:model.textValue(), multiIndex:null})"
+                (blur)="onEditEnd.emit({value:model.textValue(), multiIndex:null})">
+
+              <mrd-tooltip *ngIf="tooltipValidation" [tooltipValue]="ehrValidationHelper.mapToMessageString(translatedValidationErrors)" [iconText]="'!'" class="mrd-tooltip-validation flex-row"></mrd-tooltip>
+
+              <mrd-validation-error-list *ngIf="!tooltipValidation"
+                                         [translatedValidationErrors]="translatedValidationErrors"></mrd-validation-error-list>
+            </mrd-field-content>
+          </mrd-labeled-input>
+        </div>
+      </div>
+    </mrd-field-content>
+  </mrd-labeled-input>
+</div>

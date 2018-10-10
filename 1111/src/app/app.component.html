@@ -1,0 +1,28 @@
+<!--<a href="#" (click)="!!changeDesc()">change</a> |-->
+<button href="#" (click)="!!logModel()">model</button>
+<button href="#" (click)="changeLanguage()">change language</button>
+<button href="#" (click)="changeDateFormat()">change date format</button>
+<button href="#" (click)="switchCustomComponent()">custom comp switch</button>
+<button href="#" (click)="showValueObject=!showValueObject">toggle value object</button>
+<button href="#" (click)="toggleForm()">toggle form desc</button>
+
+
+<h2>ehr-form-description-renderer</h2>
+<button href="#" (click)="formDescRenderer.validate()">validate {{vvv==='VALID'}}</button> isValidProp={{formDescRenderer?.isValid}}
+<button href="#" (click)="bTest()">test</button>
+<button href="#" (click)="bTest1()">test1</button>
+<button href="#" (click)="destroyForm();false">destroy form</button>
+<button href="#" (click)="createForm();false">create form</button>
+
+    <ehr-form-description-renderer #formDescRenderer *ngIf="!hideForm" [formConfig]="renderFormConfig" [formContext]="formContext" (onValidationChange)="vvv=$event" (onFieldValidationChange)="onFieldValidation($event)" (onFormRendered)="onFormRendered($event)" (onFormRenderedOneByOne)="onFormRenderedOneByOne($event)" (onValueChange)="onValueChange($event)"></ehr-form-description-renderer>
+
+<!--
+<h2>ehr-form</h2>
+<button href="#" (click)="validate()">validate {{formComp.isValid}}</button>
+<ehr-form #formComp [formRootModel]="formRootModel" [ehrContext]="formContext" [layout]="formLayout" (onValidationChange)="onValidationUpdated($event)"></ehr-form>
+-->
+
+<div *ngIf="showValueObject && (formRootModel||renderFormConfig)" [innerHTML]="values|json|prettyPrint">
+</div>
+
+

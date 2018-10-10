@@ -1,0 +1,264 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "inherit",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "label": {
+        "valign": "inherit",
+        "align": "top"
+      },
+      "field": {
+        "valign": "inherit",
+        "align": "inherit"
+      }
+    },
+    "tags": []
+  },
+  "language": "",
+  "templateLanguages": [
+    "en"
+  ],
+  "children": [
+
+    {
+      "name": "weight",
+      "localizedName": "weight",
+      "rmType": "DV_TEXT",
+      "nodeId": "at0018",
+      "min": 0,
+      "max": 1,
+      "localizedNames": {
+        "en": "Name 3"
+      },
+      "localizedDescriptions": {
+        "en": "*"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0018,'Name 3']/value",
+      "inputs": [
+        {
+          "type": "TEXT"
+        }
+      ],
+      "formId": "test_encounter/testing/testing/name_3",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "label": {
+            "valign": "inherit",
+            "align": "inherit"
+          },
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "label": {
+          "custom": true
+        },
+        "advanced": {
+          "hidden": false,
+          "readonly": false
+        },
+        "tags": [
+          "weight"
+        ],
+        "datasource": {
+          "loadRemote": false,
+          "loadRemoteUrl": "",
+          "terminology": ""
+        },
+        "field": {
+          "input": {
+            "presentation": "textfield",
+            "lines": "1"
+          }
+        }
+      }
+    },
+    {
+      "name": "Quantity container",
+      "localizedName": "Quantity container",
+      "rmType": "DV_INTERVAL<DV_QUANTITY>",
+      "nodeId": "at0023",
+      "min": 0,
+      "max": 10,
+      "localizedNames": {
+        "en": "Quantity"
+      },
+      "localizedDescriptions": {
+        "en": "*"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0022]/items[at0023]/value",
+      "children": [
+        {
+          "name": "height",
+          "localizedName": "height",
+          "rmType": "DV_TEXT",
+          "nodeId": "at0018",
+          "min": 0,
+          "max": 1,
+          "localizedNames": {
+            "en": "Name 2"
+          },
+          "localizedDescriptions": {
+            "en": "*"
+          },
+          "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0018,'Name 2']/value",
+          "inputs": [
+            {
+              "type": "TEXT"
+            }
+          ],
+          "formId": "test_encounter/testing/testing/name_2",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "label": {
+              "custom": true
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false
+            },
+            "tags": [
+              "height", "t2", "hideThis"
+            ],
+            "datasource": {
+              "loadRemote": false,
+              "loadRemoteUrl": "",
+              "terminology": ""
+            },
+            "field": {
+              "input": {
+                "presentation": "textfield",
+                "lines": "1"
+              }
+            }
+          }
+        },
+        {
+          "rmType": "DV_QUANTITY",
+          "nodeId": "",
+          "min": 2,
+          "max": 5,
+          "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0022]/items[at0023]/value/upper",
+          "inputs": [
+            {
+              "suffix": "magnitude",
+              "type": "DECIMAL",
+              "validation": {
+                "range": {
+                  "minOp": ">=",
+                  "min": 0,
+                  "maxOp": "<=",
+                  "max": 300
+                },
+                "precision": {
+                  "minOp": ">=",
+                  "min": 3,
+                  "maxOp": "<=",
+                  "max": 3
+                }
+              }
+            },
+            {
+              "suffix": "unit",
+              "type": "CODED_TEXT",
+              "list": [
+                {
+                  "value": "kg",
+                  "label": "kg",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0,
+                      "maxOp": "<=",
+                      "max": 300
+                    },
+                    "precision": {
+                      "minOp": ">=",
+                      "min": 3,
+                      "maxOp": "<=",
+                      "max": 3
+                    }
+                  }
+                }
+              ],
+              "defaultValue": "kg"
+            }
+          ],
+          "formId": "test_encounter/testing/testing/intervals/quantity/upper",
+          "viewConfig": {
+            "field": {
+              "unit": {
+                "presentation": "combobox"
+              }
+            },
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "tags": ["quantTag"],
+            "annotations": {"renderMin": 7}
+          }
+        }
+      ],
+      "formId": "test_encounter/testing/testing/intervals/quantity",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "tags": ["multiContainer"],
+        "annotations": {"renderMin": 3},
+
+        "ehrFormScript": [
+          "var bmiFn=function(h,w){      let wVal=parseFloat(w);      let hVal=parseFloat(h);      let bmiRaw = wVal * 10000 / hVal / hVal;      let bmiVal = (Math.round(bmiRaw * 100) / 100);      return !isNaN(bmiVal)?bmiVal:'';    }; var fstVal=function(vObj){return vObj.value[0]}; api.onChange('quantTag', function(v){      v=fstVal(v);      console.log('ehrScript change',v);      if(v && v.magnitude==1){      //console.log('REQUIRED SET TRUE')    }    if(v&&v.magnitude==12){      //console.log('REQUIRED SET FALSE')    }    });"
+  ]
+}
+}
+]
+}

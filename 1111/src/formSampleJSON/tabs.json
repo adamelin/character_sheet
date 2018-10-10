@@ -1,0 +1,1341 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "inherit",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "valign": "inherit",
+      "align": "inherit"
+    },
+    "tags": [],
+    "annotations": {}
+  },
+  "language": "",
+  "templateLanguages": [
+    "en"
+  ],
+  "children": [
+    {
+      "localizedName": "Fieldset",
+      "localizedNames": {
+        "en": "Fieldset"
+      },
+      "min": 0,
+      "max": -1,
+      "name": "Fieldset",
+      "rmType": "GENERIC_FIELDSET",
+      "formId": "generic-field-63252",
+      "children": [
+        {
+          "inputs": [
+            {
+              "type": "TEXT"
+            }
+          ],
+          "localizedName": "Input",
+          "localizedNames": {
+            "en": "Input"
+          },
+          "max": 1,
+          "min": 0,
+          "name": "Input",
+          "rmType": "GENERIC_FIELD",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false
+            },
+            "tags": [
+              "multi"
+            ],
+            "datasource": {
+              "loadRemote": false,
+              "loadRemoteUrl": "",
+              "terminology": ""
+            },
+            "field": {
+              "input": {
+                "presentation": "textfield",
+                "lines": "1"
+              },
+              "type": "DV_TEXT"
+            },
+            "annotations": {
+              "cssclass": "test-class is-here"
+            }
+          },
+          "formId": "generic-field-27021"
+        },
+        {
+          "name": "Date",
+          "localizedName": "Date",
+          "rmType": "DV_DATE",
+          "nodeId": "at0013",
+          "min": 0,
+          "max": 100,
+          "localizedNames": {
+            "en": "Date"
+          },
+          "localizedDescriptions": {
+            "en": "*"
+          },
+          "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0013]/value",
+          "inputs": [
+            {
+              "type": "DATE"
+            }
+          ],
+          "formId": "test_encounter/testing/testing/date",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false
+            },
+            "tags": [
+              "multi",
+              "selectFromField"
+            ],
+            "datasource": {
+              "loadRemote": false,
+              "loadRemoteUrl": "",
+              "terminology": ""
+            },
+            "annotations": {},
+            "field": {
+              "input": {
+                "dateFormat": "",
+                "hideDate": false,
+                "hideTime": false
+              }
+            }
+          }
+        },
+        {
+          "name": "Testing DV_CODED_TEXT",
+          "localizedName": "Testing DV_CODED_TEXT",
+          "rmType": "DV_CODED_TEXT",
+          "nodeId": "at0027",
+          "min": 0,
+          "max": 100,
+          "localizedNames": {
+            "en": "Testing DV_CODED_TEXT"
+          },
+          "localizedDescriptions": {
+            "en": "*"
+          },
+          "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0027]/value",
+          "inputs": [
+            {
+              "suffix": "code",
+              "type": "CODED_TEXT",
+              "list": [
+                {
+                  "value": "at0028",
+                  "label": "First",
+                  "localizedLabels": {
+                    "en": "First"
+                  },
+                  "localizedDescriptions": {
+                    "en": "First item"
+                  }
+                },
+                {
+                  "value": "at0029",
+                  "label": "Second",
+                  "localizedLabels": {
+                    "en": "Second"
+                  },
+                  "localizedDescriptions": {
+                    "en": "Second item"
+                  }
+                }
+              ],
+              "defaultValue": "at0029"
+            }
+          ],
+          "formId": "test_encounter/testing/testing/testing_dv_coded_text",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false
+            },
+            "tags": [],
+            "datasource": {
+              "loadRemote": false,
+              "loadRemoteUrl": "",
+              "terminology": ""
+            },
+            "field": {
+              "code": {
+                "presentation": "radios",
+                "columns": "2"
+              }
+            }
+          }
+        }
+      ],
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "annotations": {
+          "tab": "group1"
+        }
+      }
+    },
+    {
+      "localizedName": "tab 2 title",
+      "localizedNames": {
+        "en": "Fieldset"
+      },
+      "min": 0,
+      "max": 1,
+      "name": "tab 2 title",
+      "rmType": "GENERIC_FIELDSET",
+      "formId": "generic-field-8625",
+      "children": [
+        {
+          "localizedName": "no kendo2",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": 1,
+          "name": "no kendo2",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-92940",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "annotations": {
+              "tab": ""
+            },
+            "label": {
+              "custom": true
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false,
+              "hideFrame": false
+            },
+            "tags": []
+          },
+          "children": [
+            {
+              "name": "Name 2",
+              "localizedName": "Name 2",
+              "rmType": "DV_TEXT",
+              "nodeId": "at0018",
+              "min": 0,
+              "max": -1,
+              "localizedNames": {
+                "en": "Name 2"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0018,'Name 2']/value",
+              "inputs": [
+                {
+                  "type": "TEXT"
+                }
+              ],
+              "formId": "test_encounter/testing/testing/name_2",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localizedName": "prop",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": 1,
+          "name": "prop",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-56772",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "label": {
+              "custom": true
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false,
+              "hideFrame": false
+            },
+            "tags": [],
+            "annotations": {
+              "tab": ""
+            }
+          },
+          "children": [
+            {
+              "name": "Proportion1",
+              "localizedName": "Proportion1",
+              "rmType": "DV_PROPORTION",
+              "nodeId": "at0049",
+              "min": 0,
+              "max": -1,
+              "localizedNames": {
+                "en": "Proportion1"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0049]/value",
+              "inputs": [
+                {
+                  "suffix": "numerator",
+                  "type": "DECIMAL",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0,
+                      "maxOp": "<=",
+                      "max": 100
+                    }
+                  }
+                },
+                {
+                  "suffix": "denominator",
+                  "type": "DECIMAL",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 100,
+                      "maxOp": "<=",
+                      "max": 100
+                    }
+                  }
+                }
+              ],
+              "formId": "test_encounter/testing/testing/proportion1",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localizedName": "Fieldset",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": 1,
+          "name": "Fieldset",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-80073",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "annotations": {
+              "tab": ""
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false,
+              "hideFrame": false
+            },
+            "tags": []
+          },
+          "children": [
+            {
+              "name": "Testing DV_TEXT",
+              "localizedName": "Testing DV_TEXT",
+              "rmType": "DV_TEXT",
+              "nodeId": "at0026",
+              "min": 0,
+              "max": -1,
+              "localizedNames": {
+                "en": "Testing DV_TEXT"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0026]/value",
+              "inputs": [
+                {
+                  "type": "TEXT"
+                }
+              ],
+              "formId": "test_encounter/testing/testing/testing_dv_text",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "annotations": {}
+              }
+            }
+          ]
+        },
+        {
+          "localizedName": "sub 2",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": 1,
+          "name": "sub 2",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-8994",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "annotations": {
+              "tab": ""
+            },
+            "label": {
+              "custom": true
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false,
+              "hideFrame": false
+            },
+            "tags": []
+          },
+          "children": [
+            {
+              "name": "Count1",
+              "localizedName": "Count1",
+              "rmType": "DV_COUNT",
+              "nodeId": "at0033",
+              "min": 0,
+              "max": -1,
+              "localizedNames": {
+                "en": "Count1"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0033]/value",
+              "inputs": [
+                {
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 1,
+                      "maxOp": "<=",
+                      "max": 20
+                    }
+                  }
+                }
+              ],
+              "formId": "test_encounter/testing/testing/count1",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localizedName": "gr 2 tab1",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": 1,
+          "name": "gr 2 tab1",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-9875",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "label": {
+              "custom": true
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false,
+              "hideFrame": false
+            },
+            "tags": [],
+            "annotations": {
+              "tab": "gr2"
+            }
+          },
+          "children": [
+            {
+              "name": "DateTime2",
+              "localizedName": "DateTime2",
+              "rmType": "DV_DATE",
+              "nodeId": "at0038",
+              "min": 0,
+              "max": 1,
+              "localizedNames": {
+                "en": "DateTime2"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0038]/value",
+              "inputs": [
+                {
+                  "type": "DATE"
+                }
+              ],
+              "formId": "test_encounter/testing/testing/datetime2",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "label": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  },
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "advanced": {
+                  "hidden": false,
+                  "readonly": false
+                },
+                "tags": [],
+                "datasource": {
+                  "loadRemote": false,
+                  "loadRemoteUrl": "",
+                  "terminology": ""
+                },
+                "field": {
+                  "input": {
+                    "dateFormat": "",
+                    "hideDate": false,
+                    "hideTime": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localizedName": "Fieldset",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": -1,
+          "name": "Fieldset",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-34094",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "annotations": {
+              "tab": "gr2"
+            }
+          },
+          "children": [
+            {
+              "name": "Testing DV_CODED_TEXT",
+              "localizedName": "Testing DV_CODED_TEXT",
+              "rmType": "DV_CODED_TEXT",
+              "nodeId": "at0027",
+              "min": 0,
+              "max": 100,
+              "localizedNames": {
+                "en": "Testing DV_CODED_TEXT"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0027]/value",
+              "inputs": [
+                {
+                  "suffix": "code",
+                  "type": "CODED_TEXT",
+                  "list": [
+                    {
+                      "value": "at0028",
+                      "label": "First",
+                      "localizedLabels": {
+                        "en": "First"
+                      },
+                      "localizedDescriptions": {
+                        "en": "First item"
+                      }
+                    },
+                    {
+                      "value": "at0029",
+                      "label": "Second",
+                      "localizedLabels": {
+                        "en": "Second"
+                      },
+                      "localizedDescriptions": {
+                        "en": "Second item"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "formId": "test_encounter/testing/testing/testing_dv_coded_text:1",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "label": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  },
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "advanced": {
+                  "hidden": false,
+                  "readonly": true
+                },
+                "tags": [],
+                "datasource": {
+                  "loadRemote": false,
+                  "loadRemoteUrl": "",
+                  "terminology": ""
+                },
+                "field": {
+                  "code": {
+                    "presentation": "radios",
+                    "columns": "1"
+                  }
+                }
+              }
+            },
+            {
+              "name": "Proportion1",
+              "localizedName": "Proportion1",
+              "rmType": "DV_PROPORTION",
+              "nodeId": "at0049",
+              "min": 0,
+              "max": 100,
+              "localizedNames": {
+                "en": "Proportion1"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0049]/value",
+              "inputs": [
+                {
+                  "suffix": "numerator",
+                  "type": "DECIMAL",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0,
+                      "maxOp": "<=",
+                      "max": 100
+                    }
+                  }
+                },
+                {
+                  "suffix": "denominator",
+                  "type": "DECIMAL",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 100,
+                      "maxOp": "<=",
+                      "max": 100
+                    }
+                  }
+                }
+              ],
+              "formId": "test_encounter/testing/testing/proportion1:1",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "label": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  },
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "advanced": {
+                  "hidden": false,
+                  "readonly": false
+                },
+                "tags": [],
+                "datasource": {
+                  "loadRemote": false,
+                  "loadRemoteUrl": "",
+                  "terminology": ""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "localizedName": "gr 2 tab2",
+          "localizedNames": {
+            "en": "Fieldset"
+          },
+          "min": 0,
+          "max": 1,
+          "name": "gr 2 tab2",
+          "rmType": "GENERIC_FIELDSET",
+          "formId": "generic-field-96898",
+          "viewConfig": {
+            "size": {
+              "field": "inherit",
+              "label": "inherit",
+              "fill": "inherit"
+            },
+            "layout": {
+              "label": {
+                "valign": "inherit",
+                "align": "inherit"
+              },
+              "field": {
+                "valign": "inherit",
+                "align": "inherit"
+              }
+            },
+            "annotations": {
+              "tab": "gr2"
+            },
+            "label": {
+              "custom": true
+            },
+            "advanced": {
+              "hidden": false,
+              "readonly": false,
+              "hideFrame": false
+            },
+            "tags": [
+              "selectTab"
+            ]
+          },
+          "children": [
+            {
+              "name": "Boolean2",
+              "localizedName": "Boolean2",
+              "rmType": "DV_BOOLEAN",
+              "nodeId": "at0046",
+              "min": 0,
+              "max": 1,
+              "localizedNames": {
+                "en": "Boolean2"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0046]/value",
+              "inputs": [
+                {
+                  "type": "BOOLEAN",
+                  "list": [
+                    {
+                      "value": "true",
+                      "label": "true"
+                    }
+                  ]
+                }
+              ],
+              "formId": "test_encounter/testing/testing/boolean2",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "label": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  },
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "advanced": {
+                  "hidden": false,
+                  "readonly": false
+                },
+                "tags": [],
+                "datasource": {
+                  "loadRemote": false,
+                  "loadRemoteUrl": "",
+                  "terminology": ""
+                },
+                "field": {
+                  "input": {
+                    "threeState": true
+                  }
+                }
+              }
+            },
+            {
+              "name": "Name 1",
+              "localizedName": "Name 1",
+              "rmType": "DV_TEXT",
+              "nodeId": "at0018",
+              "min": 0,
+              "max": -1,
+              "localizedNames": {
+                "en": "Name 1"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0018,'Name 1']/value",
+              "inputs": [
+                {
+                  "type": "TEXT"
+                }
+              ],
+              "formId": "test_encounter/testing/testing/name_1",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                }
+              }
+            },
+            {
+              "name": "Duration2",
+              "localizedName": "Duration2",
+              "rmType": "DV_DURATION",
+              "nodeId": "at0041",
+              "min": 0,
+              "max": -1,
+              "localizedNames": {
+                "en": "Duration2"
+              },
+              "localizedDescriptions": {
+                "en": "*"
+              },
+              "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0041]/value",
+              "inputs": [
+                {
+                  "suffix": "year",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0,
+                      "maxOp": "<=",
+                      "max": 1
+                    }
+                  },
+                  "defaultValue": 0
+                },
+                {
+                  "suffix": "month",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0
+                    }
+                  },
+                  "defaultValue": 0
+                },
+                {
+                  "suffix": "day",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0
+                    }
+                  },
+                  "defaultValue": 0
+                },
+                {
+                  "suffix": "week",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0
+                    }
+                  },
+                  "defaultValue": 0
+                },
+                {
+                  "suffix": "hour",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0
+                    }
+                  },
+                  "defaultValue": 0
+                },
+                {
+                  "suffix": "minute",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0
+                    }
+                  },
+                  "defaultValue": 0
+                },
+                {
+                  "suffix": "second",
+                  "type": "INTEGER",
+                  "validation": {
+                    "range": {
+                      "minOp": ">=",
+                      "min": 0
+                    }
+                  },
+                  "defaultValue": 0
+                }
+              ],
+              "formId": "test_encounter/testing/testing/duration2",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "field": {
+                  "columns": 7
+                }
+              }
+            },
+            {
+              "localizedName": "Fieldset",
+              "localizedNames": {
+                "en": "Fieldset"
+              },
+              "min": 0,
+              "max": 1,
+              "name": "Fieldset",
+              "rmType": "GENERIC_FIELDSET",
+              "formId": "generic-field-81724",
+              "viewConfig": {
+                "size": {
+                  "field": "inherit",
+                  "label": "inherit",
+                  "fill": "inherit"
+                },
+                "layout": {
+                  "label": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  },
+                  "field": {
+                    "valign": "inherit",
+                    "align": "inherit"
+                  }
+                },
+                "label": {
+                  "custom": true
+                },
+                "advanced": {
+                  "hidden": false,
+                  "readonly": false,
+                  "hideFrame": false
+                },
+                "tags": []
+              },
+              "children": [
+                {
+                  "name": "Time",
+                  "localizedName": "Time",
+                  "rmType": "DV_TIME",
+                  "nodeId": "at0014",
+                  "min": 0,
+                  "max": -1,
+                  "localizedNames": {
+                    "en": "Time"
+                  },
+                  "localizedDescriptions": {
+                    "en": "*"
+                  },
+                  "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0014]/value",
+                  "inputs": [
+                    {
+                      "type": "TIME"
+                    }
+                  ],
+                  "formId": "test_encounter/testing/testing/time",
+                  "viewConfig": {
+                    "size": {
+                      "field": "inherit",
+                      "label": "inherit",
+                      "fill": "inherit"
+                    },
+                    "layout": {
+                      "field": {
+                        "valign": "inherit",
+                        "align": "inherit"
+                      }
+                    },
+                    "field": {
+                      "input": {
+                        "dateFormat": "",
+                        "hideDate": false,
+                        "hideTime": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "Count2",
+                  "localizedName": "Count2",
+                  "rmType": "DV_COUNT",
+                  "nodeId": "at0034",
+                  "min": 0,
+                  "max": 1,
+                  "localizedNames": {
+                    "en": "Count2"
+                  },
+                  "localizedDescriptions": {
+                    "en": "*"
+                  },
+                  "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0034]/value",
+                  "inputs": [
+                    {
+                      "type": "INTEGER",
+                      "validation": {
+                        "range": {
+                          "maxOp": "<=",
+                          "max": 20
+                        }
+                      }
+                    }
+                  ],
+                  "formId": "test_encounter/testing/testing/count2",
+                  "viewConfig": {
+                    "size": {
+                      "field": "inherit",
+                      "label": "inherit",
+                      "fill": "inherit"
+                    },
+                    "layout": {
+                      "field": {
+                        "valign": "inherit",
+                        "align": "inherit"
+                      }
+                    }
+                  }
+                },
+                {
+                  "name": "Name 1",
+                  "localizedName": "Name 1",
+                  "rmType": "DV_TEXT",
+                  "nodeId": "at0018",
+                  "min": 0,
+                  "max": -1,
+                  "localizedNames": {
+                    "en": "Name 1"
+                  },
+                  "localizedDescriptions": {
+                    "en": "*"
+                  },
+                  "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0018,'Name 1']/value",
+                  "inputs": [
+                    {
+                      "type": "TEXT"
+                    }
+                  ],
+                  "formId": "test_encounter/testing/testing/name_1:1",
+                  "viewConfig": {
+                    "size": {
+                      "field": "inherit",
+                      "label": "inherit",
+                      "fill": "inherit"
+                    },
+                    "layout": {
+                      "field": {
+                        "valign": "inherit",
+                        "align": "inherit"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "label": {
+            "valign": "inherit",
+            "align": "inherit"
+          },
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "annotations": {
+          "tab": "group1"
+        },
+        "label": {
+          "custom": true
+        },
+        "advanced": {
+          "hidden": false,
+          "readonly": false,
+          "hideFrame": false
+        },
+        "tags": []
+      }
+    },
+    {
+      "name": "DateTime1",
+      "localizedName": "DateTime1",
+      "rmType": "DV_DATE_TIME",
+      "nodeId": "at0037",
+      "min": 0,
+      "max": -1,
+      "localizedNames": {
+        "en": "DateTime1"
+      },
+      "localizedDescriptions": {
+        "en": "*"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0037]/value",
+      "inputs": [
+        {
+          "type": "DATETIME"
+        }
+      ],
+      "formId": "test_encounter/testing/testing/datetime1",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "field": {
+          "input": {
+            "dateFormat": "",
+            "hideDate": false,
+            "hideTime": false
+          }
+        }
+      }
+    }
+  ]
+}

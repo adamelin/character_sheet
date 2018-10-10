@@ -1,0 +1,31 @@
+<div class="form-group ehr-text ehr-line col-sm-12"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.data-ehr-name]="model.getName()"
+     *ngIf="!(isHiddenValue)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)"
+     [ngClass]="EhrLayoutHelper.computeEhrLineClass(model)"
+>
+   <mrd-labeled-input [labelClasses]="labelClasses" [inputClasses]="inputWrapClasses" [tooltipValue]="tooltipValue">
+    <mrd-field-label *ngIf="!isLabelHidden">{{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}</mrd-field-label>
+    <mrd-field-content>
+        <!--p={{model.getPath()}} unq={{this.model.getSanitizedUniqueId()}}-->
+      <div class="row" [ngClass]="inputHorizontalLayoutClass">
+        <div [ngClass]="inputClasses">
+      <mrd-date-input
+        *ngFor="let modelValue of (modelValues$ | async); let i=index; trackBy:trackByIndex" [multiIndex]="i"
+        [modelValue]="modelValue" (onModelValue)="updateModel($event, i)"
+        (addMultiInput)="onAddMultiInput()" (removeMultiInput)="onRemoveMultiInput(i)"
+        [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId(i)" [isReadOnly]="isReadOnlyValue"
+        [isHidden]="isHiddenValue" [hideDateEditor]="true"
+        class="multi-input-item" [ehrFormArray]="ehrFormArray"
+        [validateFormEvent]="validateFormEvent" [valueValidationFunctions]="valueValidationFunctions" [validationResolver]="validationResolver"
+        (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+        [removeMultiDisabled]="removeDisabledIndexes[i]" [addMultiDisabled]="addDisabledIndexes[i]"
+        [multiControlsHidden]="multiControlsHidden"
+        (onEditStart)="onEditStart.emit({value:modelValue, multiIndex:i})" (onEditEnd)="onEditEnd.emit({value:modelValue, multiIndex:i})"
+        [displayTooltipValidation]="tooltipValidation" [timePlaceholder]="timePlaceholder">
+      </mrd-date-input>
+        </div>
+        </div>
+    </mrd-field-content>
+  </mrd-labeled-input>
+</div>

@@ -1,0 +1,44 @@
+<div class="ehr-container ehr-disable-possible"
+     id="{{model.getUniqueId()}}"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.ehr-name]="model.getName()"
+     [class.ehr-disabled]="isReadOnly"
+     *ngIf="!(isHidden)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)"
+     [formGroup]="containerFormGroup">
+  <div class="ehr-glass-panel"></div>
+
+  <div class="ehr-container-bar card-header" *ngIf="!hideFrame">
+
+    <span class="label-start-position-holder">
+        <i class="fa fa-angle-down k-sprite expand-arrow-icon"></i>
+    </span>
+    <span class="ehr-container-label">
+      <tab-header *ngIf="tabService.isInTabGroup(model); else containerTitle" [model]="model" [language]="(ehrFormState.getFormContext()|async)?.language" [showValidationMarks]="showTabValidation|async"></tab-header>
+      <ng-template #containerTitle>
+        <span *ngIf="!model.getViewConfig().isLabelHidden()" class="ehr-label-text">{{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}</span>
+        <span *ngIf="supportsMulti()" class="multi-container-position-label">{{getMultiNumberText(model.getMultiIndex(false)+1)}}</span>
+      </ng-template>
+      <!--<span class="multiplicity-label" [ngClass]="{'show-multiplicity': !model.isRequired() && (model.isOptional && !model.isOptional())} "> {{model.getViewConfig().getMultiplicityString()}}</span>-->
+    </span>
+    <span class="label-end-position-holder" *ngIf="!tabService.isInTabGroup(model)">
+      <span class="ehr-container-controls hide-in-ehr-view-mode float-right" *ngIf="supportsMulti() && !model.getViewConfig().getKeepVisibleIndexList().length">
+         <button type="button" class="btn btn-success ehr-duplicate-container-btn btn-multiplicity rounded-circle" (click)="duplicateContainer()" [disabled]="!duplicationEnabled">&#x254B;</button>
+         <button type="button" class="btn btn-danger ehr-remove-container-btn btn-multiplicity rounded-circle" (click)="removeContainer()" [disabled]="!removalEnabled">&#x2500;</button>
+      </span>
+    </span>
+
+  </div>
+  <div class="card-block">
+    <rows-renderer *ngIf="!!layout; else renderModel" [rows]="layout.rows" [parentModel]="model" [ehrFormGroup]="containerFormGroup" [validateFormEvent]="validateFormEvent" (onEhrComponentRendered)="childComponentRendered($event)"></rows-renderer>
+    <ng-template #renderModel>
+      <model-renderer *ngFor="let childModel of model.childModels; trackBy:EhrLayoutHelper.trackByFieldModel"
+                      class="col-sm-12" style="padding-left: 0; padding-right: 0" [model]="childModel"
+                      [ehrFormGroup]="containerFormGroup"
+                      [validateFormEvent]="validateFormEvent"
+                      (onEhrComponentRendered)="childComponentRendered($event)"
+      ></model-renderer>
+      <div *ngIf="progresiveDisplayChildModelIsHidden.length" class="ehr-render-one-by-one"></div>
+    </ng-template>
+  </div>
+
+</div>
