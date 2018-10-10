@@ -1,0 +1,28 @@
+<div class="form-group ehr-text ehr-line col-sm-12"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.data-ehr-name]="model.getName()"
+     *ngIf="!(isHiddenValue)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)"
+     [ngClass]="EhrLayoutHelper.computeEhrLineClass(model)"
+>
+
+  <mrd-labeled-input [labelClasses]="labelClasses" [inputClasses]="inputWrapClasses" [tooltipValue]="tooltipValue">
+    <mrd-field-label *ngIf="!isLabelHidden">{{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}</mrd-field-label>
+    <mrd-field-content>
+      <div class="row" [ngClass]="inputHorizontalLayoutClass">
+      <div [ngClass]="inputClasses">
+          <mrd-boolean-input
+            [modelValue]="(modelValues$|async)" (onModelValue)="updateModel($event)"
+            [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId()" [isReadOnly]="isReadOnlyValue" [isHidden]="isHiddenValue"
+            [parentFormGroup]="ehrFormGroup" [controlName]="'boolean_'+ehrFormConfig.getFormId()+model.getSanitizedUniqueId()"
+            [validateFormEvent]="validateFormEvent" [valueValidationFunctions]="valueValidationFunctions" [validationResolver]="validationResolver"
+            (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+            [isThreeState]="isThreeState()" [allowedValues]="allowedValues"
+            (onEditStart)="onEditStart.emit({value:model.booleanValue(), multiIndex:0})" (onEditEnd)="onEditEnd.emit({value:model.booleanValue(), multiIndex:0})"
+            [displayTooltipValidation]="tooltipValidation" [textRight]="textRight"
+            >
+          </mrd-boolean-input>
+      </div>
+      </div>
+    </mrd-field-content>
+  </mrd-labeled-input>
+</div>

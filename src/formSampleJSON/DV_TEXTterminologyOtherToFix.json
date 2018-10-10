@@ -1,0 +1,78 @@
+{
+  'formId': 'form_root',
+  'name': 'Form root',
+  'rmType': 'FORM_DEFINITION',
+  'viewConfig': {
+    'label': {
+      'custom': false,
+      'value': '',
+      'useLocalizations': false,
+      'localizationsList': {}
+    },
+    'size': {
+      'field': 'inherit',
+      'label': 'inherit',
+      'fill': 'inherit'
+    },
+    'layout': {
+      'valign': 'inherit',
+      'align': 'inherit'
+    },
+    'tags': []
+  },
+  'language': '',
+  'templateLanguages': [
+    'en'
+  ],
+  'children': [
+
+    {
+      'name': 'DvText with combo',
+      'localizedName': 'DvText TERMINOLOGY',
+      'rmType': 'DV_TEXT',
+      'nodeId': 'at0068',
+      'min': 0,
+      'max': 1,
+      'localizedNames': {
+        'en': 'DvText TERMINOLOGY'
+      },
+      'localizedDescriptions': {
+        'en': '*'
+      },
+      'aqlPath': '/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0068]/value',
+      'inputs': [
+        {
+          "type": "TEXT",
+          "terminology": "RU3",
+          'listOpen': true,
+          'suffix':'textValues'
+        }
+      ],
+      'formId': 'testing/testing/dvtext_with_combo',
+      'viewConfig': {
+        'size': {
+          'field': 'inherit',
+          'label': 'inherit',
+          'fill': 'inherit'
+        },
+        'layout': {
+          'field': {
+            'valign': 'inherit',
+            'align': 'inherit'
+          }
+        },
+        "field": {
+          "code": {
+            "presentation": "radios",
+            "columns": "3"
+          }
+        },
+        "datasource": {
+          "loadRemote": true,
+          "loadRemoteUrl": "ICD-10-AM",
+          "terminology": ""
+        }
+      }
+    }
+  ]
+}

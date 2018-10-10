@@ -1,0 +1,8 @@
+<div class="row">
+<div [ngClass]="colObj|columnWidth:parentModel?.hasTag('evenCols')" *ngFor="let colObj of columns">
+  <!--<div>/////////COL START {{ colObj|json}}</div>-->
+  <!--<div [innerHTML]="colObj|json|prettyPrint"></div>-->
+  <rows-renderer *ngIf="parentModel" [rows]="colObj.children" [ehrFormGroup]="ehrFormGroup" [parentModel]="parentModel" [validateFormEvent]="validateFormEvent" (onEhrComponentRendered)="childComponentRendered($event)"></rows-renderer>
+  <!--<div *ngIf="dev">END COL/////////</div>-->
+</div>
+</div>

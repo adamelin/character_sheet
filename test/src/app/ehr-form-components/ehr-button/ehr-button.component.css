@@ -1,0 +1,10 @@
+/*:host{*/
+  /*border: solid;*/
+/*}*/
+:host.no-border{
+  border: none;
+}
+
+:host.no-header > .ehr-container > .ehr-container-bar{
+  display: none;
+}

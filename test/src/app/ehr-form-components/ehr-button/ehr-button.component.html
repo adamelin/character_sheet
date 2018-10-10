@@ -1,0 +1,11 @@
+<div class="ehr-button ehr-disable-possible"
+     id="{{model.getUniqueId()}}"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.ehr-name]="model.getName()"
+     [class.ehr-disabled]="isReadOnly"
+     *ngIf="!(isHidden)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)">
+  <button (click)="onBtnClick(ev)">
+    {{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}
+  </button>
+
+</div>

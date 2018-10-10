@@ -1,0 +1,1856 @@
+[
+  {
+    "col": 1,
+    "row": 1,
+    "width": 12,
+    "height": 290,
+    "children": [
+      {
+        "id": "comorbidities/comorbidities",
+        "rows": [
+          {
+            "cols": [
+              {
+                "width": "100%",
+                "children": [
+                  {
+                    "id": "comorbidities/comorbidities/pulmonary_hypertension",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "generic-field-60473"
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/pulmonary_hypertension/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/pulmonary_hypertension/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/pulmonary_hypertension/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/pulmonary_hypertension/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/pulmonary_hypertension/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/pulmonary_hypertension/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/pulmonary_hypertension/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/pulmonary_hypertension/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/pulmonary_hypertension/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/diabetes",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/diabetes/diabetes_type_i",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "generic-field-52808"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_i/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/diabetes/diabetes_type_ii/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/chronic_kidney_disease",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/chronic_kidney_disease/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/chronic_kidney_disease/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/chronic_kidney_disease/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/problem_diagnosis/problem_diagnosis_name"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/chronic_kidney_disease/dialysis/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/gastrointestinal_diseases",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/liver_disease/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/problem_diagnosis/problem_diagnosis_name"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/problem_diagnosis/date_time_of_onset"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/problem_diagnosis/comment"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/exclusion_of_a_problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/absence_of_information",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastric_ulcer/absence_of_information/absence_statement"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/problem_diagnosis/problem_diagnosis_name"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/problem_diagnosis/date_time_of_onset"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/problem_diagnosis/comment"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/exclusion_of_a_problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/absence_of_information",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/duodenal_ulcer/absence_of_information/absence_statement"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/problem_diagnosis/problem_diagnosis_name"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/problem_diagnosis/date_time_of_onset"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/problem_diagnosis/comment"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/exclusion_of_a_problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/absence_of_information",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/peptic_ulcer/absence_of_information/absence_statement"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/problem_diagnosis/problem_diagnosis_name"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/problem_diagnosis/date_time_of_onset"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/problem_diagnosis/comment"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/exclusion_of_a_problem_diagnosis",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                                  },
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/absence_of_information",
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "width": "100%",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "comorbidities/comorbidities/gastrointestinal_diseases/ulcer_diseases/gastrojejunal_ulcer/absence_of_information/absence_statement"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/cholecystolithiasis/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/inflammatory_bowel_disease/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/diverticulosis/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/gastrointestinal_diseases/chronic_pancreatitis/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/peripheral_arterial_occlusive_disease/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/cerebrovascular_disease",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/cerebrovascular_disease/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/cerebrovascular_disease/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/cerebrovascular_disease/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/cerebrovascular_disease/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/cerebrovascular_disease/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/cerebrovascular_disease/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/cerebrovascular_disease/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/cerebrovascular_disease/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/cerebrovascular_disease/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/lung_diseases",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/chronic_obstructive_pulmonary_disease/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/lung_diseases/bronchitis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/bronchitis/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/bronchitis/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/bronchitis/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/bronchitis/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/bronchitis/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/bronchitis/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/bronchitis/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/bronchitis/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/bronchitis/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/lung_diseases/asthma",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/asthma/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/asthma/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/asthma/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/asthma/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/asthma/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/asthma/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/asthma/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/asthma/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/asthma/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/problem_diagnosis/problem_diagnosis_name"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/problem_diagnosis/date_time_of_onset"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/problem_diagnosis/comment"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/exclusion_of_a_problem_diagnosis",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                                      },
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/absence_of_information",
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "width": "100%",
+                                                    "children": [
+                                                      {
+                                                        "id": "comorbidities/comorbidities/lung_diseases/condition_after_tuberculosis/absence_of_information/absence_statement"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/malignancies",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/malignancies/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/problem_diagnosis/malignancy_localization"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/malignancies/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/malignancies/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/malignancies/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/endocrinological_diseases",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/endocrinological_diseases/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/endocrinological_diseases/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/endocrinological_diseases/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/endocrinological_diseases/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/endocrinological_diseases/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/endocrinological_diseases/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/endocrinological_diseases/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/endocrinological_diseases/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/endocrinological_diseases/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/psychiatric_disorders",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/psychiatric_disorders/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/psychiatric_disorders/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/psychiatric_disorders/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/psychiatric_disorders/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/psychiatric_disorders/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/psychiatric_disorders/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/psychiatric_disorders/exclusion_of_a_problem_diagnosis/problem_diagnosis"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/psychiatric_disorders/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/psychiatric_disorders/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "comorbidities/comorbidities/other_associated_diseases",
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "width": "100%",
+                            "children": [
+                              {
+                                "id": "comorbidities/comorbidities/other_associated_diseases/problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/other_associated_diseases/problem_diagnosis/problem_diagnosis_name"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/other_associated_diseases/problem_diagnosis/date_time_of_onset"
+                                          },
+                                          {
+                                            "id": "comorbidities/comorbidities/other_associated_diseases/problem_diagnosis/comment"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/other_associated_diseases/exclusion_of_a_problem_diagnosis",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/other_associated_diseases/exclusion_of_a_problem_diagnosis/exclusion_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "comorbidities/comorbidities/other_associated_diseases/absence_of_information",
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "width": "100%",
+                                        "children": [
+                                          {
+                                            "id": "comorbidities/comorbidities/other_associated_diseases/absence_of_information/absence_statement"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+<ng-template [ngIf]="!multiControlsHidden">
+        <button (click)="addMultiInput.next()" [disabled]="addMultiDisabled" class="btn btn-primary single-field-multi-button single-field-multi-add" type="button">&#x254B;</button>
+        <button (click)="removeMultiInput.next()" [disabled]="removeMultiDisabled" class="btn btn-primary" type="button">&#x2500;</button>
+</ng-template>
+<!--<span ng-show="isMulti() && !model.getViewConfig().isReadOnly()" class="single-field-multi-buttons hide-in-ehr-view-mode">
+    <span>
+        <button ng-disabled="!(addMultiFieldEnabled() && ( $parent.$last && (singleFieldMultiValuesList.length && !anyTextValueEmpty())) )" ng-click="addMultiField()" class="single-field-multi-button single-field-multi-add">+</button>
+        <button ng-disabled="!(removeMultiFieldEnabled() && (!$parent.$first || (singleFieldMultiValuesList.length>1)) )" ng-click="removeMultiField()" class="single-field-multi-button single-field-multi-remove">-</button>
+    </span>
+</span>-->

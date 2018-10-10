@@ -1,0 +1,22 @@
+<div class="form-root-card-block  ehr-form-container-fluid" *ngIf="!(isHidden$|async)">
+  <div class="row">
+    <form [formGroup]="rootFormGroup" class="col-sm-12">
+      <div class="ehr-disable-possible" [class.ehr-disabled]="isReadOnly">
+        <div class="ehr-glass-panel"></div>
+        <div *ngIf="layout && layout[0] && layout[0].children && layout[0].children.length && formRootModel; else renderNoLayout">
+          <rows-renderer [rows]="layout[0].children" [parentModel]="formRootModel" [ehrFormGroup]="rootFormGroup"
+                         [validateFormEvent]="validateFormEvent"></rows-renderer>
+        </div>
+        <ng-template #renderNoLayout>
+          <div>
+            <model-renderer
+              *ngFor="let childModel of formRootModel?.childModels; trackBy:EhrLayoutHelper.trackByFieldModel"
+              [model]="childModel" [ehrFormGroup]="rootFormGroup"
+              [validateFormEvent]="validateFormEvent"></model-renderer>
+          </div>
+        </ng-template>
+
+      </div>
+    </form>
+  </div>
+</div>

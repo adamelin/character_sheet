@@ -1,0 +1,12 @@
+<div *ngFor="let rowObj of rows; trackBy:EhrLayoutHelper.trackByIndex" class="row">
+  <div class="col-sm-12" *ngIf="!rowObj.id; else renderItems">
+    <column-renderer [columns]="rowObj.cols" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="validateFormEvent" [parentModel]="parentModel" (onEhrComponentRendered)="childComponentRendered($event)"></column-renderer>
+  </div>
+  <ng-template #renderItems>
+    <div *ngFor="let multiModelInstance of parentModel.findChildrenWithPath(rowObj.id); trackBy:EhrLayoutHelper.trackByFieldModel" class="col-sm-12">
+      <div class="row">
+        <model-renderer *ngIf="rowObj.id" [model]="multiModelInstance" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="validateFormEvent" [layout]="rowObj" (onEhrComponentRendered)="childComponentRendered($event)"></model-renderer>
+      </div>
+    </div>
+  </ng-template>
+</div>

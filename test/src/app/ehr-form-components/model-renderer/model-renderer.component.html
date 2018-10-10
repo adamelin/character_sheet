@@ -1,0 +1,84 @@
+<div *ngIf="!customComponentsDictionary.registeredComponents[model.getRmType()]; else defaultComponentOverride">
+
+  <div [ngSwitch]="model.getRmType()">
+    <ng-template [ngSwitchCase]="RmType.DV_TEXT">
+      <ehr-text [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-text>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_IDENTIFIER">
+      <ehr-identifier [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-identifier>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_URI">
+      <ehr-uri [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-uri>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_EHR_URI">
+      <ehr-ehr-uri [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-ehr-uri>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_COUNT">
+      <ehr-count *ngIf="!ruCustomComponents; else ruCountComp" [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-count>
+      <ng-template #ruCountComp>
+        <ehr-count-ru [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-count-ru>
+      </ng-template>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_PROPORTION">
+      <ehr-proportion [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-proportion>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_QUANTITY">
+      <ehr-quantity *ngIf="!ruCustomComponents; else ruQuantComp" [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-quantity>
+      <ng-template #ruQuantComp>
+        <ehr-quantity-ru [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-quantity-ru>
+      </ng-template>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_DURATION">
+      <ehr-duration *ngIf="!ruCustomComponents; else ruDurComp" [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-duration>
+      <ng-template #ruDurComp>
+        <ehr-duration-ru [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-duration-ru>
+      </ng-template>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_DATE_TIME">
+      <ehr-date-time [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-date-time>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_DATE">
+      <ehr-date [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-date>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_TIME">
+      <ehr-time [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-time>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_CODED_TEXT">
+      <ehr-coded-text [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-coded-text>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_ORDINAL">
+      <ehr-coded-text [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-coded-text>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_BOOLEAN">
+      <ehr-boolean *ngIf="!ruCustomComponents; else ruBoolComp" [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-boolean>
+      <ng-template #ruBoolComp>
+        <ehr-boolean-ru [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-boolean-ru>
+      </ng-template>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.DV_MULTIMEDIA">
+      <ehr-multimedia [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-multimedia>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.GENERIC_BUTTON">
+      <ehr-button [model]="model" (onEhrComponentRendered)="childComponentRendered($event)"></ehr-button>
+    </ng-template>
+    <ng-template [ngSwitchCase]="RmType.CUSTOM">
+      <ng-template ehr-custom-component-host [customModel]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" (onEhrComponentRendered)="childComponentRendered($event)">
+        displaying custom component ...
+      </ng-template>
+    </ng-template>
+    <!--directive renders even when ng-template should disable it
+    <ng-template [ngSwitchCase]="RmType.CUSTOM" ehr-custom-component-host [customModel]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent">
+      displaying custom component ...
+    </ng-template>-->
+    <ng-template ngSwitchDefault>
+      <ehr-container *ngIf="model.isContainer()" [hidden]="( tabService.isTab(model) && !(tabService.isTabSelected$(model)|async) )" [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent" [layout]="layout"
+                     (onEhrComponentRendered)="childComponentRendered($event)"></ehr-container>
+      <div *ngIf="!model.isContainer()" ehr-on-rendered-emitter="" (onEhrComponentRendered)="childComponentRendered(model)">UNKNOWN DEFAULT COMP. ({{RmType[model.getRmType()]}})</div>
+    </ng-template>
+  </div>
+
+</div>
+
+<ng-template #defaultComponentOverride>
+  <ng-template ehr-custom-component-host [model]="model" [ehrFormGroup]="ehrFormGroup" [validateFormEvent]="valFEvent"  (onEhrComponentRendered)="childComponentRendered($event)"></ng-template>
+</ng-template>

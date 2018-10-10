@@ -1,0 +1,185 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "inherit",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "valign": "inherit",
+      "align": "inherit"
+    },
+    "tags": []
+  },
+  "language": "",
+  "templateLanguages": [
+    "en"
+  ],
+  "children": [
+    {
+      "name": "Testing Quantity",
+      "localizedName": "Testing Quantity",
+      "rmType": "DV_QUANTITY",
+      "nodeId": "at0031",
+      "min": 0,
+      "max": 100,
+      "localizedNames": {
+        "en": "Testing Quantity"
+      },
+      "localizedDescriptions": {
+        "en": "*"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0031]/value",
+      "inputs": [
+        {
+          "suffix": "magnitude",
+          "type": "DECIMAL",
+          "validation": {
+            "range": {
+              "minOp": ">=",
+              "min": 0,
+              "maxOp": "<=",
+              "max": 500
+            },
+            "precision": {
+              "minOp": ">=",
+              "min": 1,
+              "maxOp": "<=",
+              "max": 1
+            }
+          },
+          "defaultValue": 65
+        },
+        {
+          "suffix": "unit",
+          "type": "CODED_TEXT",
+          "list": [
+            {
+              "value": "kg",
+              "label": "kg",
+              "validation": {
+                "range": {
+                  "minOp": ">=",
+                  "min": 0,
+                  "maxOp": "<=",
+                  "max": 500
+                },
+                "precision": {
+                  "minOp": ">=",
+                  "min": 1,
+                  "maxOp": "<=",
+                  "max": 1
+                }
+              }
+            }
+          ],
+          "defaultValue": "kg"
+        }
+      ],
+      "formId": "test_encounter/testing/testing/testing_quantity",
+      "viewConfig": {
+        "field": {
+          "unit": {
+            "presentation": "combobox"
+          }
+        },
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "label": {
+            "valign": "inherit",
+            "align": "inherit"
+          },
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "annotations": {},
+        "advanced": {
+          "hidden": false,
+          "readonly": false
+        },
+        "tags": [
+          "quant"
+        ],
+        "datasource": {
+          "loadRemote": false,
+          "loadRemoteUrl": "",
+          "terminology": ""
+        }
+      }
+    },
+    {
+      "name": "Name 1",
+      "localizedName": "Name 1",
+      "rmType": "DV_TEXT",
+      "nodeId": "at0018",
+      "min": 0,
+      "max": 100,
+      "localizedNames": {
+        "en": "Name 1"
+      },
+      "localizedDescriptions": {
+        "en": "*"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0018,'Name 1']/value",
+      "inputs": [
+        {
+          "type": "TEXT"
+        }
+      ],
+      "formId": "test_encounter/testing/testing/name_1",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "label": {
+            "valign": "inherit",
+            "align": "inherit"
+          },
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "advanced": {
+          "hidden": false,
+          "readonly": false
+        },
+        "tags": [
+          "bmiValue"
+        ],
+        "datasource": {
+          "loadRemote": false,
+          "loadRemoteUrl": "",
+          "terminology": ""
+        },
+        "field": {
+          "input": {
+            "presentation": "textfield",
+            "lines": "1"
+          }
+        },
+        "annotations": {
+          "component": "bmiCalc"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "xlarge",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "label": {
+        "valign": "inherit",
+        "align": "inherit"
+      },
+      "field": {
+        "valign": "inherit",
+        "align": "inherit"
+      }
+    },
+    "tags": []
+  },
+  "language": "",
+  "templateLanguages": [
+    "en"
+  ],
+  "children": [
+    {
+      "name": "DvText with combo",
+      "localizedName": "DvText with combo",
+      "rmType": "DV_TEXT",
+      "nodeId": "at0068",
+      "min": 1,
+      "max": 2,
+      "localizedNames": {
+        "en": "DvText with combo"
+      },
+      "localizedDescriptions": {
+        "en": "*"
+      },
+      "aqlPath": "/content[openEHR-EHR-OBSERVATION.testing.v1]/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.testing.v1]/items[at0068]/value",
+      "inputs": [
+        {
+          "type": "TEXT",
+          "list": [
+            {
+              "value": "Value 1",
+              "label": "Value 1"
+            },
+            {
+              "value": "Value 2",
+              "label": "Value 2"
+            },
+            {
+              "value": "And three",
+              "label": "And three"
+            }
+          ],
+          "listOpen": true
+        }
+      ],
+      "formId": "test_encounter/testing/testing/dvtext_with_combo",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "label": {
+            "valign": "inherit",
+            "align": "inherit"
+          },
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "advanced": {
+          "hidden": false,
+          "readonly": false
+        },
+        "tags": ['no_multi', 'textValue'],
+        "datasource": {
+          "loadRemote": false,
+          "loadRemoteUrl": "",
+          "terminology": ""
+        },
+        "field": {
+          "input": {
+            "presentation": "radios",
+            "columns": "2"
+          }
+        }
+      }
+    }
+  ]
+}

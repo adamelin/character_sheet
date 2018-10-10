@@ -1,0 +1,39 @@
+<div class="form-group ehr-text ehr-line col-sm-12"
+     [attr.data-ehr-path]="model.getPath()"
+     [attr.data-ehr-name]="model.getName()"
+     *ngIf="!(isHiddenValue)" ehr-on-rendered-emitter="" (onEhrComponentRendered)="onEhrComponentRendered.next(model)"
+     [ngClass]="EhrLayoutHelper.computeEhrLineClass(model)"
+>
+   <mrd-labeled-input [labelClasses]="labelClasses" [inputClasses]="inputWrapClasses" [tooltipValue]="tooltipValue">
+    <mrd-field-label *ngIf="!isLabelHidden">{{model.labelFor((ehrFormState.getFormContext()|async)?.language)}}</mrd-field-label>
+    <mrd-field-content>
+        <!--p={{model.getPath()}} unq={{this.model.getSanitizedUniqueId()}}-->
+      <div class="row" [ngClass]="inputHorizontalLayoutClass">
+        <div [ngClass]="inputClasses">
+          <mrd-multimedia-input
+            *ngFor="let modelValue of (modelValues$ | async); let i=index; let lastItm=last; trackBy:trackByIndex" [multiIndex]="i"
+            [modelValue]="modelValue['|uri']" (onModelValue)="updateUri($event, i)"
+            [mimeTypeValue]="modelValue['|mimetype']" (onMimeTypeValue)="updateMime($event, i)"
+            (addMultiInput)="onAddMultiInput()" (removeMultiInput)="onRemoveMultiInput(i)"
+            [ehrUniqueId]="ehrFormConfig.getFormId()+model.getSanitizedUniqueId(i)" [isReadOnly]="isReadOnlyValue"
+            [isHidden]="isHiddenValue"
+            (onEditStart)="onEditStart.emit({value:modelValue, multiIndex:i})" (onEditEnd)="onEditEnd.emit({value:modelValue, multiIndex:i})"
+            class="multi-input-item" [ehrFormArray]="ehrFormArray"
+            [validateFormEvent]="validateFormEvent" [valueValidationFunctions]="valueValidationFunctions" [validationResolver]="validationResolver"
+            (onTranslatedValidationErrors)="onTranslatedValidationErrors.emit($event)"
+            [removeMultiDisabled]="removeDisabledIndexes[i]" [addMultiDisabled]="addDisabledIndexes[i]"
+            [multiControlsHidden]="multiControlsHidden" [inputPlaceholder]="ehrInputPlaceholder"
+            [enableKeyboardInput]="!ctxUploadEnabled || uploadDisabled || enableKeyboardInput"
+            [disableUploadButton]="!ctxUploadEnabled || uploadDisabled || isReadOnlyValue"
+            [hideUploadButton]="!(lastItm && (!uploadDisabled && ctxUploadEnabled))"
+            [displayContentUri]="displayContentUri" [hideContentPreview]="hideContentPreview"
+            (onFileSelected)="onFileSelected($event, i)" [buttonBrowseFilesLabel]="'browseFiles'|translate" [buttonDropFilesLabel]="'dropFiles'|translate"
+            [displayTooltipValidation]="tooltipValidation" [hideLongValueTooltips]="hideLongValueTooltips">
+          </mrd-multimedia-input>
+        </div>
+        </div>
+      <div>
+      </div>
+    </mrd-field-content>
+  </mrd-labeled-input>
+</div>

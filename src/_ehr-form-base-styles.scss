@@ -1,0 +1,151 @@
+$ehr-input-max-width-s: 250px;
+$ehr-input-max-width-m: 450px;
+$ehr-input-max-width-l: 550px;
+$ehr-input-max-width-xl: 100%;
+$border-radius: 5px !default;
+
+ehr-form {
+
+  ehr-container {
+    margin-bottom: 15px;
+  }
+
+  .list-open-other-input-label {
+    margin-right: 5px;
+  }
+
+  .mrd-input-field {
+    &:not(:last-child) {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  mrd-quantity-input {
+    mrd-codedtext-input {
+      margin-bottom: -1px !important;
+      margin-left: 20px;
+    }
+  }
+
+  mrd-multi-input-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.ehr-hidden, .ehr-hidden {
+    display: none;
+  }
+
+  .pointer {
+    user-select: none;
+    cursor: pointer;
+  }
+
+  form .ehr-disable-possible.ehr-disabled .ehr-glass-panel {
+    background-color: rgba(220, 220, 220, 0.49);
+    border: 1px solid gainsboro;
+    border-radius: $border-radius;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .text-sm-left {
+      text-align: left !important;
+    }
+    .text-sm-right {
+      text-align: right !important;
+    }
+    .text-sm-center {
+      text-align: center !important;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .text-md-left {
+      text-align: left !important;
+    }
+    .text-md-right {
+      text-align: right !important;
+    }
+    .text-md-center {
+      text-align: center !important;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .text-lg-left {
+      text-align: left !important;
+    }
+    .text-lg-right {
+      text-align: right !important;
+    }
+    .text-lg-center {
+      text-align: center !important;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .text-xl-left {
+      text-align: left !important;
+    }
+    .text-xl-right {
+      text-align: right !important;
+    }
+    .text-xl-center {
+      text-align: center !important;
+    }
+  }
+
+  ngb-typeahead-window {
+    max-height: 500px;
+    max-width: 600px;
+    overflow: auto;
+  }
+
+  .image-media {
+    max-width: 100%;
+    background-color: #66afe9;
+  }
+
+  .ehr-render-one-by-one {
+    &::after {
+      content: "rendering fields ...";
+    }
+  }
+
+  .mrd-date-day-today {
+    background-color: #66afe9;
+  }
+
+  .mrd-date-day {
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 0.25rem;
+    background: transparent;
+    display: block;
+  }
+
+  .btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+  }
+
+  .has-danger .form-control.no-danger, .has-danger .no-danger .form-control {
+    color: inherit;
+    border: inherit;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+
+}
+
+

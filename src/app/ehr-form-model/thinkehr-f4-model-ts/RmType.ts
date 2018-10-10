@@ -1,0 +1,35 @@
+/**
+ * Created by matjazhi on 15.4.2016.
+ */
+
+export enum RmType{
+    FORM_DEFINITION,
+    GENERIC_FIELDSET,
+    DV_QUANTITY,
+    DV_CODED_TEXT,
+    DV_TEXT,
+    DV_PROPORTION,
+    DV_BOOLEAN,
+    DV_DATE,
+    DV_TIME,
+    DV_DATE_TIME,
+    DV_ORDINAL,
+    DV_COUNT,
+    DV_INTEGER,
+    DV_DURATION,
+    DV_URI,
+    DV_EHR_URI,
+    DV_IDENTIFIER,
+    GENERIC_FIELD,
+    DV_MULTIMEDIA,
+    OBSERVATION,
+    EVENT,
+    COMPOSITION,
+    SECTION,
+    EVALUATION,
+    INSTRUCTION,
+    ACTION,
+    CUSTOM,
+    GENERIC_COMPOSITE_FIELD,
+    GENERIC_BUTTON
+}

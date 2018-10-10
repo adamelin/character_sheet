@@ -1,0 +1,81 @@
+{
+  "formId": "form_root",
+  "name": "Form root",
+  "rmType": "FORM_DEFINITION",
+  "viewConfig": {
+    "label": {
+      "custom": false,
+      "value": "",
+      "useLocalizations": false,
+      "localizationsList": {}
+    },
+    "size": {
+      "field": "inherit",
+      "label": "inherit",
+      "fill": "inherit"
+    },
+    "layout": {
+      "valign": "inherit",
+      "align": "inherit"
+    },
+    "tags": []
+  },
+  "language": "",
+  "templateLanguages": [
+    "en"
+  ],
+  "children": [
+    {
+      "inputs": [
+        {
+          "type": "BOOLEAN"
+        }
+      ],
+      "localizedName": "Coded text radios",
+      "localizedNames": {
+        "en": "Boolean"
+      },
+      "max": 1,
+      "min": 0,
+      "name": "Coded text radios",
+      "rmType": "GENERIC_FIELD",
+      "formId": "generic-field-87916",
+      "viewConfig": {
+        "size": {
+          "field": "inherit",
+          "label": "inherit",
+          "fill": "inherit"
+        },
+        "layout": {
+          "label": {
+            "valign": "inherit",
+            "align": "inherit"
+          },
+          "field": {
+            "valign": "inherit",
+            "align": "inherit"
+          }
+        },
+        "label": {
+          "custom": true
+        },
+        "advanced": {
+          "hidden": false,
+          "readonly": false
+        },
+        "tags": [],
+        "datasource": {
+          "loadRemote": false,
+          "loadRemoteUrl": "",
+          "terminology": ""
+        },
+        "field": {
+          "input": {
+            "threeState": true
+          },
+          "type": "DV_BOOLEAN"
+        }
+      }
+    }
+  ]
+}
